@@ -1,4 +1,12 @@
 Railsforstartups::Application.routes.draw do
+
+  root :to => 'pages#home'
+  get 'about' => 'pages#about'
+  get 'about' => 'pages#team'
+  get 'about' => 'pages#contactus'
+
+end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
