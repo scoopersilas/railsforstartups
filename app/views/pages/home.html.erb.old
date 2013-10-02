@@ -1,0 +1,11 @@
+<div class="center hero-unit">
+    <h1>Welcome to Rails for Startups</h1>
+    <p>to <%= link_to 'Rails for Startups',  "http://railsforstartups.com" %>
+     </p>
+	
+    <p> <%= link_to 'Contact Us',  "#" , class: "btn btn-large btn-primary" %> </p>
+
+Image here
+</div>
+
+

@@ -4,7 +4,9 @@ Railsforstartups::Application.routes.draw do
   get 'about' => 'pages#about'
   get 'team' => 'pages#team'
   get 'contactus' => 'pages#contactus'
-
+  get 'Appdev' => 'pages#Appdev'
+  get 'uxandui' => 'pages#uxandui'
+  get 'digitaldesign' => 'pages#digitaldesign'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

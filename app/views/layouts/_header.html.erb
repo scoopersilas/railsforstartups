@@ -1,32 +1,29 @@
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
+ <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
         <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-             <a class="brand" href="/">RailsforStartups</a>
-
-                <div class="nav-collapse">
-                    <ul class="nav">
-                        <li>
-                            <%= link_to 'Home',  root_path %>
-                        </li>
-                        <li>    
-                            <%= link_to 'About',  about_path %>
-                        </li>
-                        <li>    
-                            <%= link_to 'Team',  team_path %>
-                        </li>
-                        <li>    
-                            <%= link_to 'Contact Us',  contactus_path %>
-                        </li>
-                    </ul>
-                    <ul class="nav pull-right">
-                                <li><%= link_to 'Login',  '#' %></li>
-                    </ul>
-                </div>
-        </div>
-    </div>
-</div>
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Rails for Startups</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="about">About Us</a></li>
+              <li><a href="contactus">Contact Us</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      Services
+                      <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="Appdev">Application Development</a></li>
+                  <li><a href="uxandui">UX and UI</a></li>
+                  <li><a href="digitaldesign">Digital Design</a></li>
+                </ul>
+              </li><!-- dropdown -->
+            </ul><!-- /.nav -->
+          </div><!--/.nav-collapse -->
+        </div><!-- /.container -->
+      </div><!-- /.navbar-inner -->
+    </div><!-- /.navbar -->

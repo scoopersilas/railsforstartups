@@ -1,9 +1,72 @@
-<div class="center hero-unit">
-    <h1>Welcome to Rails for Startups</h1>
-    <p>to <%= link_to 'Rails for Startups',  "http://railsforstartups.com" %>
-     </p>
+      <div class="container">
+         <!--  Carousel - consult the Twitter Bootstrap docs at 
+            http://twitter.github.com/bootstrap/javascript.html#carousel -->
+      <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
+        <div class="carousel-inner">
+          <div class="item active"><!-- class of active since it's the first item -->
+            <img src="/images/home.jpg" alt="" />
+            <div class="carousel-caption">
+              <p>We are your complete design and dev team</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="http://placehold.it/1200x480" alt="" />
+            <div class="carousel-caption">
+              <p>We help bootstrap your startup before you are funded!</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="http://placehold.it/1200x480" alt="" />
+            <div class="carousel-caption">
+              <p>We drive results around the clock</p>
+            </div>
+          </div>
+          <div class="item">
+            <img src="http://placehold.it/1200x480" alt="" />
+            <div class="carousel-caption">
+              <p>We build with the best ingridents</p>
+            </div>
+          </div>
+        </div><!-- /.carousel-inner -->
+        <!--  Next and Previous controls below
+              href values must reference the id for this carousel -->
+          <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+      </div><!-- /.carousel -->
 
-    <p> <%= link_to 'Contact Us',  "#" , class: "btn btn-large btn-primary" %> </p>
-</div>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h2>App Development</h2>
+           <p>We develop, launch and operate web and mobile applications for your startup idea. </p>
+          <p><a class="btn" href="#">Learn More &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>UX & UI </h2>
+           <p>We design user experiences and interfaces for digital products. </p>
+          <p><a class="btn" href="#">Learn More &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2>Digital Design</h2>
+          <p>We create brands, marketing websites, illustrations and icons to take your idea from concept to market.</p>
+          <p><a class="btn" href="#">Learn More &raquo;</a></p>
+        </div>
+      </div>
+    </div> <!-- /container -->
 
-
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+    <!-- Bootstrap jQuery plugins compiled and minified -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        $('.carousel').carousel({
+          interval: 8000 
+        });
+      });
+    </script>
+    
