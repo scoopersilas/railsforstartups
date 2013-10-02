@@ -7,13 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ruby on Rails for Startups, MVP, Prototype">
     <meta name="author" content="Rails for Startups">
-  <%= javascript_include_tag "application" %>
-  <%= javascript_include_tag "bootstrap" %>
-  <%= javascript_include_tag "bootstrap-responsive" %>
-  <%= csrf_meta_tags %>
-  <%= tag :meta, name: "viewport", content: "width=device-width, initial-scale=1.0" %>
+      
+      <%= javascript_include_tag "application" %>
+      <%= csrf_meta_tags %>
 
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="vendor/assets/stylesheets/bootstrap.css" rel="stylesheet">
+    
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -21,12 +20,16 @@
       }
     </style>
     
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="vendor/assets/stylesheets/bootstrap-responsive.css" rel="stylesheet">
+
+<%= tag :meta, name: "viewport", content: "width=device-width, initial-scale=1.0" %>
 
 </head>
 
 <body>
+
 <%= render 'layouts/header' %>
+
  <div class="container">
     	<%= yield %>
     <%= render 'layouts/footer' %>
